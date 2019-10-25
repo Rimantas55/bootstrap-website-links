@@ -1,3 +1,7 @@
+body {
+	overflow-x: hidden; 
+}
+
 .navbar .nav-link {
 	font-size: 14px;
 	text-transform: uppercase;
@@ -65,4 +69,9 @@
 
 #video-play a {
 	color: #fff;
+}
+
+#main-footer {
+	background-color: black;
+	color: white;
 }
