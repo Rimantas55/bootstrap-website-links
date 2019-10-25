@@ -9,6 +9,7 @@
   crossorigin="anonymous">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
   crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css" integrity="sha256-HAaDW5o2+LelybUhfuk0Zh2Vdk8Y2W2UeKmbaXhalfA=" crossorigin="anonymous" />
   <link rel="stylesheet" href="css/style.css">
   <title>Bootstrap Static Website</title>
 </head>
@@ -156,14 +157,14 @@
 <!-- INFO SECTION -->
 <section id="info" class="py-3">
   <div class="container">
-    <div class="row">
+    <div class="row" >
       <div class="col-md-6 align-self-center">
         <h3>Lorem Ipsum</h3>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate eveniet blanditiis incidunt iusto corrupti illum cum laudantium ex sequi amet.</p>
         <a href="about.html" class="btn btn-outline-danger btn-lg">Learn More</a>
       </div><!-- end of col-md-6 -->
-      <div class="col-md-6">
-        <img src="img/laptop.png" alt="pic1" class="img-fluid" >
+      <div class="col-md-6" >
+        <img src="img/laptop.png" alt="pic1" class="img-fluid">
       </div>
     </div><!-- end of row -->
   </div><!-- end of container -->
@@ -201,7 +202,68 @@
   </div><!-- end of modal-dialog -->
 </div><!-- end of modal fade -->
 
+<!-- PHOTO GALLERY -->
+<!-- USED LIGHTBOX FOR BOOTSTRAP -->
+<!-- https://ashleydw.github.io/lightbox/ ->
+     https://cdnjs.com/libraries/ekko-lightbox ->
+     (copy link tag, should be the first one and paste in head after bootstrap main link)
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css" integrity="sha256-HAaDW5o2+LelybUhfuk0Zh2Vdk8Y2W2UeKmbaXhalfA=" crossorigin="anonymous" /> 
+     (copy js script and paste under bootstrap script where all scripts are AND JS code to the scrip tags)
+     https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js
+ -->
 
+ <section id="gallery" class="py-5">
+  <div class="container">
+    <h1 class="text-center">Photo Gallery</h1>
+    <p class="text-center">Check out the photos</p>
+    <div class="row mb-4">
+      <div class="col-md-4 mb-3">
+        <!-- for each random img change px size in order to show random img otherwise it will show the same image for all images -->
+        <a href="https://source.unsplash.com/random/590x590" data-toggle="lightbox" data-gallery="img-gallery" data-height="560" data-width="560">
+          <img src="https://source.unsplash.com/random/590x590" alt="gallery-images" class="img-fluid">
+        </a>
+      </div><!-- end of col-md-4 -->
+
+
+      <div class="col-md-4 mb-3">
+        <a href="https://source.unsplash.com/random/591x591" data-toggle="lightbox" data-gallery="img-gallery" data-height="560" data-width="560">
+          <img src="https://source.unsplash.com/random/591x591" alt="gallery-images" class="img-fluid">
+        </a>
+      </div><!-- end of col-md-4 -->
+
+
+      <div class="col-md-4 mb-3">
+        <a href="https://source.unsplash.com/random/592x592" data-toggle="lightbox" data-gallery="img-gallery" data-height="560" data-width="560">
+          <img src="https://source.unsplash.com/random/592x592" alt="gallery-images" class="img-fluid">
+        </a>
+      </div><!-- end of col-md-4 -->
+    </div><!-- end of row -->
+
+
+    <div class="row mb-4">
+      <div class="col-md-4 mb-3">
+        <a href="https://source.unsplash.com/random/593x593" data-toggle="lightbox" data-gallery="img-gallery" data-height="560" data-width="560">
+          <img src="https://source.unsplash.com/random/593x593" alt="gallery-images" class="img-fluid">
+        </a>
+      </div><!-- end of col-md-4 -->
+
+
+      <div class="col-md-4 mb-3">
+        <a href="https://source.unsplash.com/random/594x594" data-toggle="lightbox" data-gallery="img-gallery" data-height="560" data-width="560">
+          <img src="https://source.unsplash.com/random/594x594" alt="gallery-images" class="img-fluid">
+        </a>
+      </div><!-- end of col-md-4 -->
+
+
+      <div class="col-md-4 mb-3">
+        <a href="https://source.unsplash.com/random/565x565" data-toggle="lightbox" data-gallery="img-gallery" data-height="560" data-width="560">
+          <img src="https://source.unsplash.com/random/565x565" alt="gallery-images" class="img-fluid">
+        </a>
+      </div><!-- end of col-md-4 -->
+    </div><!-- end of row -->
+
+  </div><!-- end of container -->
+</section>
 
 
   <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
@@ -210,6 +272,8 @@
   crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
   crossorigin="anonymous"></script>
+  <!-- script for lightbox -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js" integrity="sha256-Y1rRlwTzT5K5hhCBfAFWABD4cU13QGuRN6P5apfWzVs=" crossorigin="anonymous"></script>
 
   <script>
     // Get the current year for the copyrigth
@@ -219,6 +283,12 @@
     $('.carousel').carousel({
       interval: 6000,
       pause: 'hover'
+    });
+
+    // Light box init
+    $(document).on('click', '[data-toggle="lightbox"]', function(event) {
+      event.preventDefault();
+      $(this).ekkoLightbox();
     });
 
     // Video Play
